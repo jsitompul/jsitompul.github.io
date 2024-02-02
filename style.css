@@ -1,0 +1,296 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(3, 1, 45);
+    color: white;
+    padding: -50px; /* Reduced padding for top and bottom */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    border-top: 10px solid rgb(130, 84, 16);
+    padding: 15px;
+    background-color: rgb(234, 234, 234); /* White background for the navbar */
+    width: 100%;
+    border-bottom: 1px solid #c0b9b9;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly; /* Equally spaced list items */
+    height: 20px; /* Adjusted height to match the hover effect */
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    width: 25%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-weight: bolder;
+    position: relative;
+    transition: color 0.3s;
+    z-index: 2; /* Ensure the a element captures the click event */
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Initial height of the underline */
+    background-color: rgb(130, 84, 16); /* Color of the underline */
+    bottom: -10px;
+    left: 0;
+    transform: scaleX(0); /* Initially set the underline to zero width */
+    transform-origin: 100% 50%; /* Set the transform origin to start from the right */
+    transition: transform 0.3s ease-out; /* Add transition for animation */
+}
+
+nav ul li:hover a,
+nav ul li:active a {
+    color: rgb(130, 84, 16);
+}
+
+nav ul li:hover a::after,
+nav ul li:active a::after {
+    transform: scaleX(1);
+}
+
+header h1 {
+    margin-top: 15px;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: rgb(35, 35, 35);
+    color: white;
+    text-align: center;
+    height:  4%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*index HTML*/
+
+.left-section {
+    background-color: white; /* Light grey background for the text section */
+    width: 70%; /* Set both sections to take up half of the page width */
+    float: left; /* Float the sections to be side-by-side */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 20px;
+}
+
+.left-section p {
+    margin-bottom: 30px; /* Adjust the margin-bottom value for increased spacing */
+    line-height: 1.5;
+}
+
+.right-section {
+    background-color: white;
+    width: 30%;
+    float: right;
+    box-sizing: border-box;
+    margin-left: 70%;
+    padding: 20px;
+    position: fixed;
+    top: 65%; /* Adjust the value based on your design */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the content vertically */
+}
+
+hr{
+    border-color: #c4b9b9;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid rgb(130, 84, 16);
+}
+
+.right-section h5, .contact h5{
+    color: black;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.contact-icons{
+    margin-top: 20px;
+}
+
+.contact-icons1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.contact-icons1 a{
+    margin-top: 10px;
+    color: rgb(6, 108, 142);
+}
+
+.contact-icons img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+.contact-icons1 img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.contact-icons2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.contact-icons2 a{
+    margin-top: 10px;
+    color: rgb(6, 108, 142);
+}
+
+
+.contact-icons2 img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Clear the float to ensure proper layout */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*teaching.html*/
+
+.teaching-entry1, .teaching-entry2, .teaching-entry3 {
+    margin-bottom: 30px;
+}
+
+.teaching-entry h3 {
+    color: rgb(130, 84, 16);
+    margin-bottom: 10px;
+}
+
+.teaching-entry1 p, .teaching-entry2 p, .teaching-entry3 p {
+    margin-bottom: 5px;
+}
+
+.teaching-entry1 ul, .teaching-entry3 ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+
+/* Style for non-navigation links */
+section.left-section a, section.project-section a {
+    color: rgb(6, 108, 142);
+}
+
+/*projects.html*/
+.project {
+    align-items: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.image-pos{
+    display: flex;
+}
+
+.project-image {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Keep it square */
+    margin-right: 20px; /* Adjust as needed */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project h4 {
+    margin-bottom: 5px; /* Adjust the margin-bottom value to reduce spacing */
+}
+
+.project p {
+    margin-top: -3px;
+    margin-bottom: 5px; /* Adjust the margin-bottom value to reduce spacing */
+    line-height: 1.5;
+}
+
+
+.button-container {
+    display: flex;
+    gap: 2px; /* Adjust the gap as needed */
+}
+
+.description-button {
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(6, 108, 142);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.description-button::before {
+    content: '\25BC'; /* Downward arrow */
+    margin-right: 5px;
+}
+
+.description-button.open::before {
+    content: '\25B2'; /* Upward arrow when open */
+}
+
+.pdf-button {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.description {
+    display: none;
+    border: 1px dashed #090909;
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.project-section {
+    background-color: white; /* Light grey background for the text section */
+    width: 90%; /* Set both sections to take up half of the page width */
+    float: right; /* Float the sections to be side-by-side */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 20px;
+}
