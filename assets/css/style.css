@@ -36,12 +36,12 @@
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
     hsl(45, 100%, 71%) 0%, 
-    hsla(36, 100%, 69%, 0) 50%
+    #1a4442 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
     hsla(45, 100%, 71%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
+    #1a4442 79.86%
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
@@ -56,14 +56,14 @@
 
   /* solid */
 
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
+  --jet: #badada;
+  --onyx: #1a4442;
+  --eerie-black-1: #1a4442;
+  --eerie-black-2: #153837;
+  --smoky-black: #b1bfbe;
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --orange-yellow-crayola: hsl(45, 90%, 50%);
   --vegas-gold: hsl(45, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
@@ -278,7 +278,7 @@ article.active {
   padding: 15px;
   padding-top: 45px;
   border-radius: 14px;
-  box-shadow: var(--shadow-2);
+  box-shadow: var(--shadow-1);
   cursor: pointer;
   z-index: 1;
 }
@@ -287,7 +287,7 @@ article.active {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--bg-gradient-jet);
+  background: var(--eerie-black-1);
   border-radius: inherit;
   z-index: -1;
 }
@@ -361,7 +361,7 @@ main {
   border-radius: 0 15px;
   font-size: 13px;
   color: var(--orange-yellow-crayola);
-  background: var(--border-gradient-onyx);
+  background: var(--eerie-black-1);
   padding: 10px;
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
@@ -373,7 +373,7 @@ main {
   position: absolute;
   inset: 1px;
   border-radius: inherit;
-  background: var(--bg-gradient-jet);
+  background: var(--eerie-black-1);
   transition: var(--transition-1);
   z-index: -1;
 }
@@ -459,7 +459,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: hsla(160, 94%, 7%, 0.75);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -524,7 +524,7 @@ main {
 
 .service-item {
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: var(--eerie-black-1);
   padding: 20px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
@@ -535,7 +535,7 @@ main {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--bg-gradient-jet);
+  background: var(--eerie-black-1);
   border-radius: inherit;
   z-index: -1;
 }
@@ -855,9 +855,13 @@ i{
  * skills 
  */
 
-.skills-title { margin-bottom: 20px; }
+
+ .skills-title { 
+  margin-bottom: 20px;
+}
 
 .skills-list { padding: 20px; }
+
 
 
 .skills-item:not(:last-child) { margin-bottom: 15px; }
@@ -876,7 +880,7 @@ i{
 }
 
 .skill-progress-bg {
-  background: var(--jet);
+  background: var(--onyx);
   width: 100%;
   height: 8px;
   border-radius: 10px;
@@ -1256,7 +1260,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--bg-gradient-jet);
+  background: var(--eerie-black-1);
   border-radius: inherit;
   z-index: -1;
   transition: var(--transition-1);
