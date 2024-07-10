@@ -978,7 +978,7 @@ i{
 
 .select-item button:hover { --eerie-black-2: hsl(240, 2%, 20%); }
 
-.project-list {
+.project-list,.coding-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
@@ -1690,7 +1690,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* portfolio and blog grid */
 
-  .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
+  .project-list, .blog-posts-list,.coding-list { grid-template-columns: 1fr 1fr; }
 
 
 
@@ -1810,6 +1810,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .project-list { grid-template-columns: repeat(3, 1fr); }
+  .coding-list { grid-template-columns: repeat(2, 1fr); }
 
 
 

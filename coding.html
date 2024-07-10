@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jimmy Sitompul</title>
+
+  <!--
+    - favicon
+  -->
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/jimmy.jpeg" alt="Jimmy Sitompul" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Jimmy Sitompul</h1>
+
+          <p class="title">Applied Mathematics MSc Student</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Expand Contact Info</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Current Institution</p>
+
+              <a href="" class="contact-link">Imperial College London, United Kingdom</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:zefanya.sitompul24@imperial.ac.uk" class="contact-link">zefanya.sitompul24@imperial.ac.uk</a>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="flag-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Nationality</p>
+
+              <address>Indonesian</address>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Date of Birth</p>
+
+              <time datetime="2000-11-27">27<sup>th</sup> November 2000</time>
+            </div>
+
+          </li>
+
+        </ul>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a class="navbar-link" href="index.html">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a class="navbar-link" href="resume.html">Resume</a>
+          </li>
+
+          <li class="navbar-item">
+            <a class="navbar-link" href="teaching.html">Teaching</a>
+          </li>
+
+          <li class="navbar-item">
+            <a class="navbar-link active" href="coding.html">Coding</a>
+          </li>
+
+          <li class="navbar-item">
+            <a class="navbar-link" href="contact.html">Contact (etc.)</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="coding  active" data-page="coding">
+
+        <header>
+          <h2 class="h2 article-title"> Coding</h2>
+        </header>
+
+        <section class="about-text">
+          <p>I am comfortable in writing codes mainly in Python and MATLAB. I also used to write codes in Java, and I am currently learning HTML/CSS/JavaScript (thanks to several online resources and myself for creating this webpage).
+        
+        </section>
+
+        <!--
+          - service
+        -->
+        <div class="separator"></div>
+
+        <section class="about-text">
+            <h3 class="h3 skills-title">GitHub</h3>
+            
+            <p>Visit my GitHub page for more coding projects/repositories.</p><br>
+
+            <a href="https://github.com/jsitompul"><button class="form-btn" type="submit" data-form-btn>
+                <ion-icon name="logo-github"></ion-icon>
+                GitHub Profile
+              </button></a>
+        </section>
+
+    
+
+        <div class="separator"></div>
+        
+        
+        <!-- AWARDS-->
+
+        <section class="projects">
+            <h3 class="h3 skills-title">Python</h3><br>
+
+          <ul class="coding-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+
+                  <img src="./assets/GIF/lagrange.gif" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Lagrange Interpolation Visualization</h3><br>
+
+                <p class="project-category">This project visualizes the process of constructing a Lagrange Interpolating Polynomial given a set of data points. The visualization includes an animation that shows how the polynomial is built step-by-step, and it prints the final simplified polynomial equation.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <img src="./assets/GIF/automatic-sudoku-solver.gif" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Automatic Sudoku Solver</h3><br>
+
+                <p class="project-category">This project is an automatic Sudoku solver written in Python. It uses the pyautogui library to simulate keyboard inputs and solve Sudoku puzzles on any application (e.g. https://sudoku.com) where you can input numbers using the keyboard. The solver utilizes a backtracking algorithm to fill in the Sudoku grid.<br>(p.s.: Apologies for the ads in the GIF above)</p>
+
+              </a>
+            </li><br>
+
+            
+
+          </ul>
+
+        </section>
+
+
+        
+
+      </article>
+
+
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
